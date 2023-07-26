@@ -12,10 +12,66 @@
     <!-- daisyUI link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link to Cascading Style Sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
- <h1>hello world</h1>
+<body class="container mx-auto">
+
+    <header>
+        <!-- navbar -->
+        <div class="mt-4 navbar rounded-[50px] justify-around bg-[#F85559]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul class="flex flex-col gap-7 ">
+                            <li><p class="font-primary text-lg font-medium">Home</p></li>
+                            <li><p class="font-primary text-lg font-medium">About us</p></li>
+                            <li><p class="font-primary text-lg font-medium">Shop</p></li>
+                            <li><p class="font-primary text-lg font-medium">All fruits</p></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class=" text-white">
+                    <ul class="flex hidden lg:flex gap-7">
+                        <li><p class="font-primary text-lg font-medium">Home</p></li>
+                        <li><p class="font-primary text-lg font-medium">About us</p></li>
+                        <li><p class="font-primary text-lg font-medium">Shop</p></li>
+                        <li><p class="font-primary text-lg font-medium">All fruits</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center  lg:ml-10">
+                <ul class="menu menu-horizontal flex items-center justify-between px-1">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class="text-white font-bold font-primary text-4xl">
+                        Fruit Burst
+                    </h1>
+                </ul>
+            </div>
+            <div class="relative hidden lg:flex">
+                <input type="text" class="border-radius font-primary text-base font-normal text-[#9a9a9a] pl-6 pt-2 pb-2" placeholder="Search here">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 -ml-8 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
