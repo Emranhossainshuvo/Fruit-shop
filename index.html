@@ -37,19 +37,35 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <ul class="flex flex-col gap-7 ">
-                            <li><p class="font-primary text-lg font-medium">Home</p></li>
-                            <li><p class="font-primary text-lg font-medium">About us</p></li>
-                            <li><p class="font-primary text-lg font-medium">Shop</p></li>
-                            <li><p class="font-primary text-lg font-medium">All fruits</p></li>
+                            <li>
+                                <p class="font-primary text-lg font-medium">Home</p>
+                            </li>
+                            <li>
+                                <p class="font-primary text-lg font-medium">About us</p>
+                            </li>
+                            <li>
+                                <p class="font-primary text-lg font-medium">Shop</p>
+                            </li>
+                            <li>
+                                <p class="font-primary text-lg font-medium">All fruits</p>
+                            </li>
                         </ul>
                     </ul>
                 </div>
                 <div class=" text-white">
                     <ul class="flex hidden lg:flex gap-7">
-                        <li><p class="font-primary text-lg font-medium">Home</p></li>
-                        <li><p class="font-primary text-lg font-medium">About us</p></li>
-                        <li><p class="font-primary text-lg font-medium">Shop</p></li>
-                        <li><p class="font-primary text-lg font-medium">All fruits</p></li>
+                        <li>
+                            <p class="font-primary text-lg font-medium">Home</p>
+                        </li>
+                        <li>
+                            <p class="font-primary text-lg font-medium">About us</p>
+                        </li>
+                        <li>
+                            <p class="font-primary text-lg font-medium">Shop</p>
+                        </li>
+                        <li>
+                            <p class="font-primary text-lg font-medium">All fruits</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -62,13 +78,58 @@
                 </ul>
             </div>
             <div class="relative hidden lg:flex">
-                <input type="text" class="border-radius font-primary text-base font-normal text-[#9a9a9a] pl-6 pt-2 pb-2" placeholder="Search here">
+                <input type="text"
+                    class="border-radius font-primary text-base font-normal text-[#9a9a9a] pl-6 pt-2 pb-2"
+                    placeholder="Search here">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 -ml-8 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>
 
+            </div>
+        </div>
+        <!-- carousel section -->
+        <div class="relative">
+            <div class="carousel mt-10 w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/banner1.png" class="w-full filter-blur" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="h-full w-full relative bg-slate-900 z-[5]">
+
+            </div> -->
+            <div class="lg:-mt-[35rem] -mt-[20rem] lg:z-[4] lg:w-[661px] mx-auto relative text-center">
+                <h1 class="font-primary text-white text-3xl lg:text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                <p class="font-primary text-base lg:text-[20px] text-white font-medium mt-6">
+                    We supply highly quality organic products
+                </p>
+                <button class="btn btn-error mt-8 text-white font-primary font text-l font-extrabold">Shop now</button>
             </div>
         </div>
     </header>

@@ -7,3 +7,6 @@
 .font-primary{
     font-family: 'Lato', sans-serif;
 }
+.carousel-item img{
+    filter: brightness(40%);
+}
